@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sandip Polytechnic TechFest 2026</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+/* BACKGROUND */
+
+body{
+background:linear-gradient(135deg,#020617,#0f172a,#020617);
+color:white;
+overflow-x:hidden;
+}
+
+/* PARTICLE BACKGROUND */
+
+#particles{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+}
+
+nav h2{
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:3.5rem;
+color:#38bdf8;
+animation:slideDown 1.5s;
+}
+
+.hero h2{
+margin-top:10px;
+font-weight:300;
+}
+
+.hero p{
+margin-top:20px;
+max-width:600px;
+opacity:0.9;
+}
+
+.hero button{
+margin-top:30px;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#38bdf8;
+color:black;
+font-weight:600;
+cursor:pointer;
+transition:0.4s;
+}
+
+.hero button:hover{
+transform:scale(1.1);
+box-shadow:0 0 15px #38bdf8;
+}
+
+/* SECTION */
+
+section{
+padding:80px 10%;
+}
+
+.title{
+text-align:center;
+margin-bottom:50px;
+font-size:2rem;
+color:#38bdf8;
+}
+
+/* EVENT CARDS */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:12px;
+transition:0.4s;
+backdrop-filter:blur(10px);
+}
+
+.card:hover{
+transform:translateY(-12px);
+box-shadow:0 0 15px #38bdf8;
+}
+
+.card h3{
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+/* FLOATING SHAPES */
+
+.circle{
+position:absolute;
+border-radius:50%;
+opacity:0.2;
+animation:float 10s infinite linear;
+}
+
+.c1{
+width:120px;
+height:120px;
+background:#38bdf8;
+top:20%;
+left:10%;
+}
+
+.c2{
+width:200px;
+height:200px;
+background:#22c55e;
+bottom:10%;
+right:15%;
+animation-duration:15s;
+}
+
+.c3{
+width:150px;
+height:150px;
+background:#f43f5e;
+top:60%;
+left:70%;
+animation-duration:12s;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-40px);}
+100%{transform:translateY(0);}
+}
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:20px;
+font-weight:600;
+color:#38bdf8;
+}
+
+.logo img{
+width:45px;
+height:45px;
+border-radius:50%;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+color:#94a3b8;
+}
+.form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.form input, .form select{
+padding:12px;
+border:none;
+border-radius:8px;
+outline:none;
+}
+
+.form button{
+padding:12px;
+background:#38bdf8;
+border:none;
+border-radius:25px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+.form button:hover{
+transform:scale(1.05);
+box-shadow:0 0 10px #38bdf8;
+}
+
+/* HERO ANIMATION */
+
+@keyframes slideDown{
+0%{opacity:0;transform:translateY(-50px);}
+100%{opacity:1;transform:translateY(0);}
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<div class="circle c1"></div>
+<div class="circle c2"></div>
+<div class="circle c3"></div>
+
+<nav>
+
+<div class="logo">
+<img src="splogo.jpg" alt="Sandip Polytechnic Logo">
+<span> <a href="https://sp.sandipfoundation.org/"> Sandip Polytechnic TechFest 2k26</a></span>
+</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#register">Register</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Sandip Polytechnic</h1>
+<h2>TechFest 2026</h2>
+
+<p>
+Welcome to the biggest technology festival at Sandip Polytechnic, a celebration of innovation,
+ creativity, and technical talent. TechFest brings together students from different departments
+  to showcase their skills through exciting competitions such as coding challenges,
+   project exhibitions, gaming tournaments, paper presentations, and web design contests.
+    It is a platform to learn, collaborate, and demonstrate your passion for technology while
+     competing with some of the brightest minds in the college.
+</p>
+
+<button>Register Now</button>
+
+</section>
+
+<section id="events">
+
+<h2 class="title">TechFest Events</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Web Design</h3>
+<p>Create stunning responsive websites using modern web technologies.<br>
+   topics is <ul>
+    <li> Tourism Website</li>
+    <li> Smart Home Using Iot </li>
+    <li> Collage Techfeast Website </li>
+   </ul>
+</p>
+</div>
+
+<div class="card">
+<h3>BGMI </h3>
+<p></p>Compete in the exciting Battlegrounds Mobile India battle royale tournament. Form your squad,
+     use strategy, and fight to become the last team standing.</p>
+</div>
+
+<div class="card">
+<h3>Paper Presentation </h3>
+<p>Present innovative ideas and technical research using slides and explanations.
+     Impress the judges with your knowledge, creativity, and communication skills.</p>
+</div>
+
+<div class="card">
+<h3>Poster Presentation</h3>
+<p>Showcase your innovative ideas and research through creative and informative posters.</p>
+</div>
+
+<div class="card">
+<h3>Project Competition</h3>
+<p>Showcase your innovative projects and technical solutions
+     while demonstrating creativity and practical skills.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About TechFest</h2>
+
+<p style="text-align:center;max-width:800px;margin:auto;">
+TechFest at Sandip Polytechnic is an annual technical festival that brings
+together students to showcase their innovation, creativity, and technical
+skills through competitions, workshops, and exhibitions.
+</p>
+
+</section>
+
+<section id="register">
+
+<section id="register">
+
+<h2 class="title">TechFest Registration</h2>
+
+<form class="form">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+
+<select required>
+<option value="">Select Department</option>
+<option>Computer Engineering</option>
+<option>Mechanical Engineering</option>
+<option>Civil Engineering</option>
+<option>Electrical Engineering</option>
+<option>Electronics Engineering</option>
+<option>Information Technology</option>
+</select>
+
+<input type="text" placeholder="College" required>
+
+<select required>
+<option value="">Select Event</option>
+<option>BGMI Tournament</option> <br>
+<option>Paper Presentation</option> <br>
+<option>Poster Presentation</option> <br>
+<option>Project Competition</option> <br>
+<option>Web Page Design</option> <br>
+</select>
+
+<button type="submit">Register</button>
+
+</form>
+
+</section>
+
+</section>
+
+<footer>
+
+<p>© 2026 Sandip Polytechnic TechFest</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<script>
+
+particlesJS("particles",{
+particles:{
+number:{value:80},
+size:{value:3},
+move:{speed:2},
+line_linked:{enable:true}
+}
+});
+
+</script>
+
+</body>
+</html>
